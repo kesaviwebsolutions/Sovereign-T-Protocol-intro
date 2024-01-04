@@ -85,7 +85,7 @@
     <header>
       <h1>Sovereign-T<sup>3</sup> Protocol : A brief introduction</h1>
     </header>
-    <p>Updated on 03.01.2024</p>
+    <p>Updated on 04.01.2024</p>
 
     <section>
       <h2>Abstract</h2>
@@ -398,6 +398,96 @@
           of users and transactions without compromising performance.
         </li>
       </ol>
+      <p>
+        The leading framework under consideration to build Sovereign-T<sup
+          >3</sup
+        >
+        Protocol is Cosmos SDK as it allows building application specific
+        blockchains. Application-specific blockchains are emerging as a powerful
+        tool in the world of blockchain technology, offering several significant
+        benefits across various dimensions such as flexibility, performance,
+        security, and sovereignty. These blockchains are distinct in their
+        approach, allowing developers to tailor their blockchain network
+        specifically for a particular application, which stands in contrast to
+        the more general-purpose nature of traditional blockchains.
+      </p>
+      <ul>
+        <li>
+          <strong>Flexibility:</strong> One of the key advantages of
+          application-specific blockchains is the high degree of flexibility
+          they offer to developers. In the Cosmos ecosystem, for example, the
+          state-machine of a blockchain is linked to the consensus engine via
+          the Application Blockchain Interface (ABCI). This interface is
+          language-agnostic, meaning developers can build their state-machine in
+          any programming language. This freedom extends to the choice of
+          development frameworks as well, with options like Cosmos SDK, Lotion,
+          and Weave available, each supporting different programming languages.
+          Moreover, the ABCI allows for the substitution of the consensus
+          engine. Currently, CometBFT is the primary option, but there's
+          potential for more in the future. Developers also have the liberty to
+          fine-tune the chosen framework and consensus engine to better suit
+          their specific needs. They can make decisions on a range of
+          trade-offs, such as the number of validators versus transaction
+          throughput or safety versus availability, and on design choices like
+          database types or account models. The Cosmos SDK even permits
+          automatic execution of code at specific times, and developers can
+          choose their cryptographic library, offering a level of customization
+          not typically available in virtual-machine blockchains.
+        </li>
+        <li>
+          <strong>Performance:</strong> In terms of performance,
+          application-specific blockchains have a distinct edge over
+          decentralized applications built on smart contracts. Since these
+          blockchains are dedicated to a single application, they avoid the
+          competition for computational and storage resources seen in
+          non-sharded virtual-machine blockchains. The use of efficient
+          consensus mechanisms like CometBFT, as opposed to the more commonly
+          used Proof-of-Work in virtual-machine blockchains, significantly
+          boosts throughput. The primary bottleneck in transaction processing is
+          the state-machine, and by avoiding the need for transactions to be
+          processed by a virtual machine, application-specific blockchains can
+          greatly reduce computational complexity.
+        </li>
+
+        <li>
+          <strong>Security:</strong> Security considerations are also a vital
+          aspect of application-specific blockchains. Developers can leverage
+          established programming languages like Go, avoiding the pitfalls of
+          immature smart contract languages. They are not restricted to the
+          cryptographic functions of underlying virtual machines and can employ
+          custom cryptography with well-audited libraries. Furthermore, the
+          absence of an underlying virtual machine reduces the risk of bugs or
+          exploitable mechanisms, simplifying the security analysis of the
+          application.
+        </li>
+        <li>
+          <strong>Sovereignty:</strong> Perhaps the most significant advantage
+          of application-specific blockchains is the sovereignty they provide.
+          In a decentralized application ecosystem, various actors are involved,
+          including users, developers, and third-party services. When
+          applications are built on shared virtual-machine blockchains, the
+          community of the application is often overshadowed by the community
+          governing the underlying blockchain. This misalignment can lead to
+          challenges in updating or fixing the application if the broader
+          community is unresponsive. Application-specific blockchains solve this
+          governance misalignment by granting full control to the stakeholders
+          of the application over the entire chain. This ensures that the
+          community is not immobilized by discovered bugs and has the freedom to
+          evolve as it sees fit. This level of sovereignty is crucial for the
+          long-term viability and adaptability of decentralized applications.
+        </li>
+      </ul>
+      <p>
+        For a comprehensive understanding of the Cosmos SDK and to gain insights
+        into the nuances of application-specific blockchains, as well as to
+        explore the limitations inherent in Smart Contracts-based ecosystems
+        such as the Ethereum Virtual Machine (EVM), visit
+        <a
+          href="https://docs.cosmos.network/main/learn/intro/why-app-specific"
+          target="_blank"
+          >official cosmos SDK docs</a
+        >
+      </p>
     </section>
 
     <section>
