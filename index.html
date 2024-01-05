@@ -49,14 +49,36 @@
         max-width: 920px;
       }
 
-      @media (max-width: 540px) {
-        body{
+      @media (max-width: 319px) {
+        body {
           margin: 10px;
         }
 
-        img{
+        img {
           max-width: 260px;
         }
+      }
+
+      /* Styles for screen widths between 320px and 540px */
+      @media (min-width: 320px) and (max-width: 540px) {
+        body {
+          margin: 20px;
+        }
+        img {
+          max-width: 300px;
+        }
+        /* Additional styles for this range can be added here */
+      }
+
+      /* Styles for screen widths between 541px and 919px */
+      @media (min-width: 541px) and (max-width: 919px) {
+        body {
+          margin: 20px;
+        }
+        img {
+          max-width: 500px;
+        }
+        /* Additional styles for this range can be added here */
       }
 
       h1,
