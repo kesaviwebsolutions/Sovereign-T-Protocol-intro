@@ -55,6 +55,15 @@
       "relation": "manyToMany",
       "target": "api::tag.tag",
       "inversedBy": "tags"
+    },
+    "Comments": {
+      "type": "customField",
+      "customField": "plugin::comments.comments"
+    },
+    "PostSeo": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.seo"
     }
   }
 }

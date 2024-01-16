@@ -12,7 +12,6 @@
   "devDependencies": {},
   "dependencies": {
     "@_sh/strapi-plugin-ckeditor": "^2.0.4",
-    "@chartbrew/plugin-strapi": "^0.6.0",
     "@ckeditor/strapi-plugin-ckeditor": "^0.0.10",
     "@strapi/plugin-cloud": "4.17.0",
     "@strapi/plugin-i18n": "4.17.0",
